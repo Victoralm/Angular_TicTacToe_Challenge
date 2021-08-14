@@ -1,2 +1,2 @@
-# Angular_TicTacToe_Exercise
-Angular Tic Tac Toe Exercise
+# Angular_TicTacToe_Challenge
+Angular Tic Tac Toe Challenge
