@@ -1,0 +1,20 @@
+.alms-margin {
+  margin: 10px;
+
+  main {
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    gap: 0px;
+
+    app-square {
+      border: 1px gray solid;
+      height: 120px;
+
+    }
+
+  }
+}
+
+
+
+
