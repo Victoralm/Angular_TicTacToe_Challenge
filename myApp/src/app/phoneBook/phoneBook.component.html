@@ -1,0 +1,33 @@
+<div class="form-wrapper">
+  <form [formGroup]="phoneContForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="firstName">First name </label>
+      <input type="text" name="firstName" id="firstName" class="userFirstname" placeholder="Coder" formControlName="firstName">
+    </div>
+    <div>
+      <label for="lastName">Last name </label>
+      <input type="text" name="lastName" id="lastName" class="userLastname" placeholder="Byte" formControlName="lastName">
+    </div>
+    <div>
+      <label for="phoneNumber">Phone number </label>
+      <input type="tel" name="phoneNumber" id="phoneNumber" class="userPhone" placeholder="8885559999" formControlName="phoneNumber">
+    </div>
+    <div>
+      <input type="submit" value="submit" class="submitButton">
+    </div>
+  </form>
+<div>
+<div class="informationTable">
+  <table>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Phone number</th>
+    </tr>
+    <tr *ngFor="let row of sortedPhoneList">
+      <td>{{row.firstName}}</td>
+      <td>{{row.lastName}}</td>
+      <td>{{row.phoneNumber}}</td>
+    </tr>
+  </table>
+</div>

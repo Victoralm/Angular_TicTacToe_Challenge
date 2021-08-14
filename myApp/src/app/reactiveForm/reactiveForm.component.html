@@ -1,0 +1,21 @@
+<div class="form-wrapper">
+  <form [formGroup]="form">
+    <div>
+      <label for="firstName">First name </label>
+      <input type="text" name="firstName" id="firstName" class="userFirstname" formControlName="firstName">
+    </div>
+    <div>
+      <label for="age">Age </label>
+      <input type="text" name="age" id="age" class="userAge" formControlName="age">
+    </div>
+    <div>
+      <label for="lastName">Last name </label>
+      <input type="text" name="lastName" id="lastName" class="userLastname" formControlName="lastName">
+    </div>
+    <div>
+      <label for="twitter">Twitter </label>
+      <input type="text" name="twitter" id="twitter" class="userTwitter" formControlName="twitter">
+    </div>
+  </form>
+  '<pre>{{ form.value | json }}</pre>',
+<div>

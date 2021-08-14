@@ -9,18 +9,27 @@ import { AppComponent } from './app.component';
 import { SquareComponent } from './square/square.component';
 import { BoardComponent } from './board/board.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CounterComponent } from './counter/counter.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PhoneBookComponent } from './phoneBook/phoneBook.component';
+import { ReactiveFormComponent } from './reactiveForm/reactiveForm.component';
 
 @NgModule({
-  declarations: [
+  declarations: [		
     AppComponent,
       SquareComponent,
-      BoardComponent
+      BoardComponent,
+      CounterComponent,
+      PhoneBookComponent,
+      ReactiveFormComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatTabsModule
   ],
   providers: [],
