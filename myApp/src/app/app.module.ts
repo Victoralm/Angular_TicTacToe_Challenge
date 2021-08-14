@@ -13,15 +13,17 @@ import { CounterComponent } from './counter/counter.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PhoneBookComponent } from './phoneBook/phoneBook.component';
 import { ReactiveFormComponent } from './reactiveForm/reactiveForm.component';
+import { GenerateUsernameComponent } from './generateUsername/generateUsername.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
       SquareComponent,
       BoardComponent,
       CounterComponent,
       PhoneBookComponent,
-      ReactiveFormComponent
+      ReactiveFormComponent,
+      GenerateUsernameComponent
    ],
   imports: [
     BrowserModule,
