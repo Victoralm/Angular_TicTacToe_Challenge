@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GenerateUsernameComponent implements OnInit {
 
+  output!: string;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  private randomNumber(min: number, max: number) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+  generate(): void {
+    let firstname: any = (<HTMLInputElement>document.getElementById('firstname')).value;
+    let lastname: any = (<HTMLInputElement>document.getElementById('lastname')).value;
+    let randNum: number = this.randomNumber(1, 9);
+    this.output = (`${firstname}_${lastname}_${randNum}`);
+
   }
 
 }
