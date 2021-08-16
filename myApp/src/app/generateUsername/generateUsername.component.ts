@@ -20,7 +20,7 @@ export class GenerateUsernameComponent implements OnInit {
   generate(): void {
     let firstname: any = (<HTMLInputElement>document.getElementById('firstname')).value;
     let lastname: any = (<HTMLInputElement>document.getElementById('lastname')).value;
-    let randNum: number = this.randomNumber(1, 9);
+    let randNum: number = this.randomNumber(1, 10);
     this.output = (`${firstname}_${lastname}_${randNum}`);
 
   }

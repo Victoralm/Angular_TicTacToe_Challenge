@@ -22,7 +22,7 @@ import { GenerateUsernameComponent } from './generateUsername/generateUsername.c
       PhoneBookComponent,
       ReactiveFormComponent,
       GenerateUsernameComponent
-   ],
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
